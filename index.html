@@ -8,19 +8,30 @@
 
     <title>Portafolio - AJAV06</title>
 
+    <link rel="stylesheet" type="text/css" href="assets/css/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyles.css">
 </head>
 
 <body>
+    <!--
+        Barra de Navegacion
+    -->
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io" id="logo-header">
+            <!-- 
+                Logo
+            -->
+            <a class="navbar-item is-hidden navbar-logo" href="#Inicio" id="logo-header">
                 <img src="assets/img/logo_header.png">
             </a>
 
+            <!-- 
+                Burger
+            -->
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                 data-target="navBurger">
                 <span aria-hidden="true"></span>
@@ -29,12 +40,15 @@
             </a>
         </div>
 
+        <!--
+            Navegación
+        -->
         <div id="navBurger" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item is-active is-tab" href="#Acerca">
-                    <i class="fas fa-user"></i>
+                <a class="navbar-item is-active is-tab" href="#Inicio">
+                    <i class="fad fa-angle-right"></i>
                     &nbsp;
-                    Acerca de mi
+                    Inicio
                 </a>
 
                 <a class="navbar-item" href="#Proyectos">
@@ -55,32 +69,95 @@
 
     <div id="fullpage">
 
-        <section class="section hero is-warning" data-anchor="Acerca">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-vcentered">
-                        <div class="column has-text-centered">
+        <section class="section hero is-backgroud-1" data-anchor="Inicio">
+            <div class="hero-body" id="ocultar">
+                <div class="container" id="inicioC">
+                    <div class="columns">
+                        <div class="column is-element-center">
                             <figure class="image">
                                 <img src="assets/img/logo_inicio.png" alt="Foto Perfil">
                             </figure>
                         </div>
 
-                        <div class="column has-text-centered">
-                            <p class="subtitle has-text-justified">
-                                !Hola! mi nombre es Albert J. Acevedo V., soy estudiante del 9no Semestre de la Carrera Ing. en Informática
-                                en la Universidad Centroccidental "Lisandro Alvarado" del Edo. Lara - Venezuela. Programo Web desde mediados del 2018, 
-                                en proyectos Universitario. En la mayoría de los proyectos he trabajado
-                                Full-Stack, pero más enfocado en el desarrollo Back-End, ya a que me llama la atención y
-                                me gusta saber como es el
-                                funcionamiento de los sistemas. Sin embargo, también he demostrado un buen desempeño en
-                                el Front-End. Por otro lado, soy
-                                autodidacta y proactivo, lo cual me ha llevado aprender cosas nuevas e interesantes, que
-                                he podido poner en practica a
-                                lo largo de mi carrera como futuro Ingeniero. En mi tiempo libre, me gusta leer sobre
-                                las nuevas tendencias
-                                tecnológicas, ver series y películas.
-                            </p>
+                        <div class="column is-element-center">
+                            <div>
+                                <h1 class="title">
+                                    Hola, mi nombre es Albert Acevedo
+                                </h1>
+
+                                <hr>
+
+                                <p class="has-text-justified
+                                        has-text-white
+                                        is-family-Montserrat">
+
+                                    Soy estudiante del <strong>9no semestre de la carrera Ing. En Informática</strong>
+                                    en la Universidad Centroccidental “Lisandro Alvarado” (UCLA) del Estado Lara –
+                                    Venezuela. Programo Web desde mediados del 2018, en proyectos universitario.
+                                    <br>
+                                    <br>
+                                    En la mayoría de los proyectos he trabajado Full-Stack, pero más enfocado en el
+                                    desarrollo
+                                    Back-End, ya que me llama la atención y me gusta saber cómo es el funcionamiento de
+                                    los
+                                    sistemas. Sin embargo, también he demostrado un buen desempeño en el Front-End.
+                                    <br>
+                                    <br>
+                                    Por otro lado, soy autodidacta y proactivo, lo cual me ha llevado aprender cosas
+                                    nuevas e
+                                    interesantes, que he podido poner en práctica a lo largo de mi carrera como futuro
+                                    Ingeniero.
+                                    En mi tiempo libre, me gusta leer sobre las nuevas tendencias tecnológicas, ver
+                                    series y películas,
+                                    además de aprender cosas nuevas que se me serán de provecho en un futuro.
+                                </p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-hidden" id="oculto">
+                <div class="slide">
+                    <div class="container">
+                        <figure class="image is-3by2">
+                            <img src="assets/img/logo_inicio.png" alt="Foto Perfil">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="slide is-element-center">
+                    <div class="container">
+                        <h1 class="title">
+                            Hola, mi nombre es Albert Acevedo
+                        </h1>
+
+                        <hr>
+
+                        <p class="has-text-justified
+                                    has-text-white
+                                    is-family-Montserrat">
+
+                            Soy estudiante del <strong>9no semestre de la carrera Ing. En Informática</strong>
+                            en la Universidad Centroccidental “Lisandro Alvarado” (UCLA) del Estado Lara –
+                            Venezuela. Programo Web desde mediados del 2018, en proyectos universitario.
+                            <br>
+                            <br>
+                            En la mayoría de los proyectos he trabajado Full-Stack, pero más enfocado en el
+                            desarrollo
+                            Back-End, ya que me llama la atención y me gusta saber cómo es el funcionamiento de
+                            los
+                            sistemas. Sin embargo, también he demostrado un buen desempeño en el Front-End.
+                            <br>
+                            <br>
+                            Por otro lado, soy autodidacta y proactivo, lo cual me ha llevado aprender cosas
+                            nuevas e
+                            interesantes, que he podido poner en práctica a lo largo de mi carrera como futuro
+                            Ingeniero.
+                            En mi tiempo libre, me gusta leer sobre las nuevas tendencias tecnológicas, ver
+                            series y películas,
+                            además de aprender cosas nuevas que se me serán de provecho en un futuro.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -91,130 +168,187 @@
                 <div class="container">
                     <div class="tile is-ancestor" style="flex-wrap: wrap;">
 
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
+                        <div class="tile is-4 is-parent">
+                            <a class="box">
+                                <article class="has-text-justified">
+
+                                    <div class="subtitle is-family-secondary">
+                                        <figure class="image is-small">
+                                            <img src="assets/img/logo-header-FlyHorse.png" alt="FlyHorse">
+                                        </figure>
+                                    </div>
+
+                                    <p class="has-text-justified">
+                                        Sistema de Apuestas Hipicas online. Primer acercamiento en desarrollo
+                                        web con Django. Proyecto Final para laAsignatura: Sistemas 3.
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="columns">
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Front-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>HTML5</li>
+                                                    <li>CSS3</li>
+                                                    <li>SASS</li>
+                                                    <li>Bootstrap 4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Back-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>Django (Python).</li>
+                                                    <li>FullPage.</li>
+                                                    <li>DataTable.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </article>
 
-                                <div class="has-text-centered" style="height: 22%;">
+                                <!-- <div class="has-text-centered" style="height: 22%;">
                                     <br />
                                     <a class="button is-primary">Comprar</a>
                                     <a class="button is-success">Compartir</a>
 
-                                </div>
-                            </div>
+                                </div> -->
+                            </a>
+
+
                         </div>
 
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
+                        <div class="tile is-4 is-parent">
+                            <a class="box">
+                                <article class="is-child has-text-justified">
+
+                                    <div class="subtitle is-family-secondary">
+                                        <figure class="image is-small">
+                                            <img src="assets/img/logo-header-FlyHorse.png" alt="FlyHorse">
+                                        </figure>
+                                    </div>
+
+                                    <p class="has-text-justified">
+                                        Sistema de Apuestas Hipicas online. Primer acercamiento en desarrollo
+                                        web con Django. Proyecto Final para laAsignatura: Sistemas 3.
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="columns">
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Front-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>HTML5</li>
+                                                    <li>CSS3</li>
+                                                    <li>SASS</li>
+                                                    <li>Bootstrap 4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Back-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>Django (Python).</li>
+                                                    <li>FullPage</li>
+                                                    <li>DataTable</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </article>
 
-                                <div class="has-text-centered" style="height: 22%;">
+                                <!-- <div class="has-text-centered" style="height: 22%;">
                                     <br />
                                     <a class="button is-primary">Comprar</a>
                                     <a class="button is-success">Compartir</a>
 
-                                </div>
-                            </div>
+                                </div> -->
+                            </a>
+
+
                         </div>
 
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
+                        <div class="tile is-4 is-parent">
+                            <a class="box">
+                                <article class="is-child has-text-justified">
+
+                                    <div class="subtitle is-family-secondary">
+                                        <figure class="image is-small">
+                                            <img src="assets/img/logo-header-FlyHorse.png" alt="FlyHorse">
+                                        </figure>
+                                    </div>
+
+                                    <p class="has-text-justified">
+                                        Sistema de Apuestas Hipicas online. Primer acercamiento en desarrollo
+                                        web con Django. Proyecto Final para laAsignatura: Sistemas 3.
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="columns">
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Front-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>HTML5</li>
+                                                    <li>CSS3</li>
+                                                    <li>SASS</li>
+                                                    <li>Bootstrap 4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="column has-text-justified">
+                                            <h2 class="subtitle">
+                                                Back-End:
+                                            </h2>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>Django (Python).</li>
+                                                    <li>FullPage</li>
+                                                    <li>DataTable</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </article>
 
-                                <div class="has-text-centered" style="height: 22%;">
+                                <!-- <div class="has-text-centered" style="height: 22%;">
                                     <br />
                                     <a class="button is-primary">Comprar</a>
                                     <a class="button is-success">Compartir</a>
 
-                                </div>
-                            </div>
-                        </div>
+                                </div> -->
+                            </a>
 
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
-                                </article>
 
-                                <div class="has-text-centered" style="height: 22%;">
-                                    <br />
-                                    <a class="button is-primary">Comprar</a>
-                                    <a class="button is-success">Compartir</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
-                                </article>
-
-                                <div class="has-text-centered" style="height: 22%;">
-                                    <br />
-                                    <a class="button is-primary">Comprar</a>
-                                    <a class="button is-success">Compartir</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tile is-3 is-parent">
-                            <div class="box">
-                                <article class="tile is-child has-text-justified" style="height: 78%;">
-                                    <div class="subtitle is-family-secondary"><strong>d</strong></div>
-                                    <p>d</p>
-                                    <p><strong>Lugar: </strong>g</p>
-                                    <p><strong>Fecha: </strong>g</p>
-                                    <p><strong>Hora: </strong>g</p>
-                                    <p><strong>Precio: </strong>Bs. g</p>
-                                    <p><strong>Disponibles: </strong>g entrada(s).</p>
-                                </article>
-
-                                <div class="has-text-centered" style="height: 22%;">
-                                    <br />
-                                    <a class="button is-primary">Comprar</a>
-                                    <a class="button is-success">Compartir</a>
-
-                                </div>
-                            </div>
                         </div>
 
 
@@ -226,21 +360,72 @@
         <section class="section hero is-primary" data-anchor="Contacto">
             <div class="hero-body">
                 <div class="container">
-                    <p class="title">
-                        Fullheight hero with navbar
-                    </p>
+                    <div class="columns">
+                        <div class="column">
+
+                        </div>
+
+                        <!-- <div class="column has-text-centered">
+                                                <p class="subtitle has-text-justified">
+                                                    !Hola! mi nombre es Albert J. Acevedo V., soy estudiante del 9no Semestre de la Carrera Ing. en Informática
+                                                    en la Universidad Centroccidental "Lisandro Alvarado" del Edo. Lara - Venezuela. Programo Web desde mediados del 2018, 
+                                                    en proyectos Universitario. En la mayoría de los proyectos he trabajado
+                                                    Full-Stack, pero más enfocado en el desarrollo Back-End, ya a que me llama la atención y
+                                                    me gusta saber como es el
+                                                    funcionamiento de los sistemas. Sin embargo, también he demostrado un buen desempeño en
+                                                    el Front-End. Por otro lado, soy
+                                                    autodidacta y proactivo, lo cual me ha llevado aprender cosas nuevas e interesantes, que
+                                                    he podido poner en practica a
+                                                    lo largo de mi carrera como futuro Ingeniero. En mi tiempo libre, me gusta leer sobre
+                                                    las nuevas tendencias
+                                                    tecnológicas, ver series y películas.
+                                                </p>
+                                            </div> -->
+                    </div>
                 </div>
             </div>
         </section>
 
     </div>
+
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="columns">
+                <div class="column is-3">
+                    <p class="has-text-justified">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio repellat commodi dolorem
+                        sunt
+                        ab aspernatur debitis alias inventore eligendi, atque ut mollitia suscipit rerum? Similique
+                        autem
+                        sunt modi consequatur quasi.
+                    </p>
+                </div>
+                <div class="column">
+                    <p class="has-text-justified">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio repellat commodi dolorem
+                        sunt
+                        ab aspernatur debitis alias inventore eligendi, atque ut mollitia suscipit rerum? Similique
+                        autem
+                        sunt modi consequatur quasi.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 </body>
 
+<!--JQUERY-->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!--DOCUMENT READY-->
+<script type="text/javascript" src="assets/js/ready.js"></script>
+<!--FONT AWASOME-->
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+<!-- FULLPAGE -->
+<script type="text/javascript" src="assets/js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="assets/js/fullpage.min.js"></script>
+<!-- SCRIPT -->
 <script type="text/javascript" src="assets/js/script.js"></script>
 
 </html>

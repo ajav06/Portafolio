@@ -1,11 +1,13 @@
 var contentFP = $('#fullpage'),
-    logoHeader = $('#logo-header');
+    logoHeader = $('#logo-header'),
+    containerI = $('#inicioC');
 
 function crearFullpage() {
     contentFP.fullpage({
         menu: '#menu',
         slidesNavigation: true,
-        // scrollHorizontally: true,
+        paddingTop: '3.5%',
+        verticalCentered: true,
         // loopBottom: true, // va al inicio luego de dar scroll en el final
         scrollOverflow: true,
         // navigation: true,
@@ -37,15 +39,3 @@ function crearFullpage() {
 }
 
 crearFullpage();
-
-$(document).ready(function () {
-
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function () {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
-
-    });
-});
